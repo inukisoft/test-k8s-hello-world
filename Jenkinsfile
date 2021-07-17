@@ -39,6 +39,7 @@ pipeline {
     }
   }
 
+
 post {
     always {
         jiraSendDeploymentInfo site: 'inukisoft.atlassian.net', environmentId: 'us-prod-1', environmentName: 'us-prod-1', environmentType: 'production'
