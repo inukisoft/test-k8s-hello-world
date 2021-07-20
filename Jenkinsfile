@@ -33,7 +33,7 @@ pipeline {
     stage('Test Jira') {
       steps {
         script {
-            echo "hola mundo !" 
+            echo "hola cruel mundo !" 
             jiraSendBuildInfo site: 'inukisoft.atlassian.net'
         }
       }
