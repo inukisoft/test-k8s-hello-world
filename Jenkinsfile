@@ -29,10 +29,11 @@ pipeline {
   agent any
   
   stages {
-
+    
     stage('Test Jira') {
       steps {
-        script { 
+        script {
+            echo "hola mundo !" 
             jiraSendBuildInfo site: 'inukisoft.atlassian.net'
         }
       }
